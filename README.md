@@ -1,6 +1,6 @@
 # hackcu-9
 
-Our HackCU 9 website code!
+Our HackCU 9 website code! Enjoy!
 
 We used the following resources.
 
