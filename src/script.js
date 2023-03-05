@@ -28,19 +28,22 @@ function doQuery() {
             data.forEach((election) => {
             const card = document.createElement('div')
             card.setAttribute('class', 'card')
+            card.style.border = "1px solid black";
 
             const h1 = document.createElement('h1')
             h1.textContent = election.name
-            h1.style.color = "red";
+            h1.style.color = "Black";
             h1.style.textAlign = "center";
 
             const p = document.createElement('p')
             p.textContent = 'Start Date: ' + election.start_date
             p.style.textAlign = "center";
+            p.style.color = "Gray";
 
             const p2 = document.createElement('p')
             p2.textContent = 'Location: ' + election.location.name
             p2.style.textAlign = "center";
+            p2.style.color = "Gray";
             
 
             container.appendChild(card)
@@ -65,7 +68,6 @@ function doQuery() {
 renderOne();
 
 
-console.log("hi");
 function renderOne() {
     var chart = new Taucharts.Chart({
         type: 'horizontal-stacked-bar',
