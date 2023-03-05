@@ -1,0 +1,75 @@
+
+
+/* .background {
+    background-image: ;
+} */
+
+
+.logo-text {
+    font-family: Georgia
+}
+
+.card {
+    font-size: 1vw;
+}
+
+
+header #logo-main{
+    display: block;
+    margin: 20px auto;
+}
+
+#navbar-primary.navbar-default {
+    background: transparent;
+    border: none;
+}
+
+#navbar-primary.navbar-default .navbar-nav { 
+    width: 100%;
+    text-align: center;
+}
+
+
+.navbar-nav li {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-nav a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header .logo {
+    margin-left: 50%;
+    width: 10%;
+}
+
+
+.logo p {
+    margin-left: 15%;
+}
+
+.logo img {
+    width: 70%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.identity-img {
+    margin-left: 24%;
+}
+
+.elections {
+    margin-left: 50%;
+    margin-top: -10%;
+}
+
+.home-img {
+    width: 50%;
+    margin-left: 30%;
+}
