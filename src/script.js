@@ -52,3 +52,98 @@ function doQuery() {
 
     request.send()
 }
+renderOne();
+
+
+function renderOne() {
+    var chart = new Taucharts.Chart({
+        type: 'horizontal-stacked-bar',
+        y: 'website',
+        x: 'percent',
+        color: 'politics',
+        plugins: [Taucharts.api.plugins.get('tooltip')()], 
+        data: [
+                {
+                    website: 'Instagram',
+                    politics: 'liberal leaning',
+                    percent: 62
+                },
+                {
+                    website: 'Instagram',
+                    politics: 'conservative leaning',
+                    percent: 38
+                },
+                {
+                    website: 'Twitter',
+                    politics: 'liberal leaning',
+                    percent: 65
+                },
+                {
+                    website: 'Twitter',
+                    politics: 'conservative leaning',
+                    percent: 35
+                },
+                {
+                    website: 'Reddit',
+                    politics: 'liberal leaning',
+                    percent: 65
+                },
+                {
+                    website: 'Reddit',
+                    politics: 'conservative leaning',
+                    percent: 35
+                },
+                {
+                    website: 'Youtube',
+                    politics: 'liberal leaning',
+                    percent: 52
+                },
+                {
+                    website: 'Youtube',
+                    politics: 'conservative leaning',
+                    percent: 48
+                },
+                {
+                    website: 'Facebook',
+                    politics: 'liberal leaning',
+                    percent: 51
+                },
+                {
+                    website: 'Facebook',
+                    politics: 'conservative leaning',
+                    percent: 49
+                },
+                {
+                    website: 'TikTok',
+                    politics: 'liberal leaning',
+                    percent: 59
+                },
+                {
+                    website: 'TikTok',
+                    politics: 'conservative leaning',
+                    percent: 41
+                },
+                {
+                    website: 'Fox News',
+                    politics: 'liberal leaning',
+                    percent: 7
+                },
+                {
+                    website: 'Fox News',
+                    politics: 'conservative leaning',
+                    percent: 93
+                },
+                {
+                    website: 'CNN',
+                    politics: 'liberal leaning',
+                    percent: 62
+                },
+                {
+                    website: 'CNN',
+                    politics: 'conservative leaning',
+                    percent: 38
+                }
+        ]
+    });
+    chart.renderTo('#bar');
+}
