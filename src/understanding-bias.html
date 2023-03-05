@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,26 +22,24 @@
             <p class="logo-text">Politic<em style="font-family: 'Shantell Sans', cursive;">all</em></p></a>
         </div>
         <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="identity.html">Your Political Views</a>
-                    <button class="dropbtn">
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="./identity.html#pih">Politics is Hard</a>
-                      <a href="./identity.html#quiz">Political Quizzes</a>
-                      <a href="./identity.html#findelection">Find a Local Election</a>
-                    </div>
-                </li>
-                <li id="underline"><a href="understanding-bias.html">Understanding Bias</a></li>
-                <li><a href="extension.html">Our Extension</a></li>
-            </ul>
-        </div><!-- /.container-fluid -->
-        </nav>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <button class="dropbtn">
+                            <li><a href="identity.html">Political Education</a></li>
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="./identity.html#pih">Politics is Hard</a>
+                          <a href="./identity.html#quiz">Political Quizzes</a>
+                          <a href="./identity.html#findelection">Find a Local Election</a>
+                        </div>
+                    </li>
+                    <li><a href="understanding-bias.html" class="underline" id="left">Understanding Bias</a></li>
+                    <li><a href="normalizing-dialogue.html" id="left-less">Normalizing Dialogue</a></li>
+                </ul>
+            </div>
+            </nav>
     </header><!-- header role="banner" -->
     <div class="main">
         

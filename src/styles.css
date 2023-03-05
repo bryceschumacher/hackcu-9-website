@@ -5,14 +5,15 @@
 } */
 
 * {
-    font-family: "Roboto";
+    font-family: "Georgia";
 }
 
 
 .logo-text {
-    font-family: Georgia;
+    font-family: "Georgia";
     font-size: 3vw;
     margin-top: -5%;
+    margin-bottom: -2%;
 }
 
 .card {
@@ -29,6 +30,7 @@
 .navbar-nav li {
     display: inline-block;
     float: none;
+    font-size: 2vw;
 }
 
 .navbar-nav a:hover:not(.active) {
@@ -139,9 +141,9 @@ display:block;
     font-family: "Roboto";
 }
 
-.dropdown {
+/* .dropdown {
     overflow: hidden;
-  }
+  } */
   
   .dropdown .dropbtn {
     border: none;
@@ -178,8 +180,15 @@ display:block;
 
   .column {
     float: left;
-    width: 33.33%;
+    width: 32%;
     height: 600px; /* Should be removed. Only for demonstration */
+  }
+
+  .columnhome {
+    float: left;
+    width: 32%;
+    height: 450px; /* Should be removed. Only for demonstration */
+    
   }
   
   /* Clear floats after the columns */
@@ -232,7 +241,84 @@ display:block;
   .img-desc {
     text-align: center;
     font-weight: 100;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     margin-top: -1.8%;
     opacity: 0.5;
   }
+
+  .home-col-head {
+    text-align: center;
+    font-size: 1vw;
+  }
+  .columnhome p {
+    padding: 4%;
+    font-size: 1.3vw;
+  }
+
+
+  a:visited {
+    color: black;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+#left {
+    margin-left: -30%;
+}
+
+#left-less {
+    margin-left: -18%;
+}
+
+.challenge {
+    margin-top: 5%;
+}
+
+.rp {
+    text-align: center;
+    font-size: 2.5vw;
+
+}
+.img-home-col img {
+    width: 30%;
+    margin-left: 35%;
+}
+
+
+.challenge {
+    background-color: #d3d3d3;
+    padding: 5px;
+}
+
+.footer {
+    padding-bottom: 40px;
+}
+
+
+
+
+#eventcalendar {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2%;
+    height: 50%;
+}
+
+
+.normalizing-title {
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 5%;
+}
+
+iframe {
+margin-left: 28%;
+}
+
+.normalizing-p {
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;
+}

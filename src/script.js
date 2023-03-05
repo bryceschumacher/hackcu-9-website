@@ -24,25 +24,35 @@ function doQuery() {
     var data = JSON.parse(this.response)['results']
     console.log(data);
     if (request.status >= 200 && request.status < 400) {
-        data.forEach((election) => {
-        const card = document.createElement('div')
-        card.setAttribute('class', 'card')
+        if (data.length != 0) {
+            data.forEach((election) => {
+            const card = document.createElement('div')
+            card.setAttribute('class', 'card')
 
-        const h1 = document.createElement('h1')
-        h1.textContent = election.name
+            const h1 = document.createElement('h1')
+            h1.textContent = election.name
+            h1.style.color = "red";
+            h1.style.textAlign = "center";
 
-        const p = document.createElement('p')
-        p.textContent = 'Start Date: ' + election.start_date
+            const p = document.createElement('p')
+            p.textContent = 'Start Date: ' + election.start_date
+            p.style.textAlign = "center";
 
-        const p2 = document.createElement('p')
-        p2.textContent = 'Location: ' + election.location.name
-        
+            const p2 = document.createElement('p')
+            p2.textContent = 'Location: ' + election.location.name
+            p2.style.textAlign = "center";
+            
 
-        container.appendChild(card)
-        card.appendChild(h1)
-        card.appendChild(p)
-        card.appendChild(p2)
-        })
+            container.appendChild(card)
+            card.appendChild(h1)
+            card.appendChild(p)
+            card.appendChild(p2)
+            })
+        } else {
+            const errorMessage = document.createElement('marquee')
+            errorMessage.textContent = `Gah, it's not working!`
+            app.appendChild(errorMessage)
+        }
     } else {
         const errorMessage = document.createElement('marquee')
         errorMessage.textContent = `Gah, it's not working!`
@@ -55,6 +65,7 @@ function doQuery() {
 renderOne();
 
 
+console.log("hi");
 function renderOne() {
     var chart = new Taucharts.Chart({
         type: 'horizontal-stacked-bar',
