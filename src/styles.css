@@ -322,3 +322,103 @@ margin-left: 28%;
     text-align: center;
     width: 60%;
 }
+
+
+.bias-p-div {
+    margin: auto;
+    width: 50%;
+}
+.bias-p {
+    text-align: center;
+
+}
+.bias-head {
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+
+
+
+
+
+
+
+  .content {
+    margin: 10% auto;
+    padding: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+    border: 1px saddlebrown solid;
+    box-shadow: 20px hsl(0, 0%, 3%);
+    z-index: -1;
+    margin-top: 0;
+  }
+  .show {
+    padding: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    width: fit-content;
+  }
+  
+  .slide_content {
+    float: left;
+    width: 600px;
+    height: 300px;
+  }
+  .slides {
+    width: 2400px;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    /* -webkit-animation-direction: alternate; */
+    -webkit-animation-play-state: running;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide_content:nth-child(1) {
+    background: url("img/psa.png")  no-repeat;
+    background-size: 100%;
+
+    z-index: 1;
+  }
+  
+  .slide_content:nth-child(2) {
+    background: url("img/leftleaning.png")  no-repeat;
+    background-size: 100%;
+  }
+  
+  .slide_content:nth-child(3) {
+    background: url("img/conservative_leaning.png")  no-repeat;
+    background-size: 100%;
+  }
+  
+  .slide_content:nth-child(4) {
+    background: url("img/analyzer.png")  no-repeat;
+    background-size: 100%;
+  }
+  
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+  
+    40% {
+      margin-left: calc(-600px * 1);
+    }
+  
+    60% {
+      margin-left: calc(-600px * 2);
+    }
+  
+    80% {
+      margin-left: calc(-600px * 3);
+    }
+  }
