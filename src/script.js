@@ -64,34 +64,23 @@ function renderOne() {
         plugins: [Taucharts.api.plugins.get('tooltip')()], 
         data: [
                 {
-                    website: 'Instagram',
+                    website: 'Fox News',
                     politics: 'liberal leaning',
-                    percent: 62
+                    percent: 7
                 },
                 {
-                    website: 'Instagram',
+                    website: 'Fox News',
                     politics: 'conservative leaning',
-                    percent: 38
-                },
-                {
-                    website: 'Twitter',
+                    percent: 93
+                },                {
+                    website: 'Facebook',
                     politics: 'liberal leaning',
-                    percent: 65
+                    percent: 51
                 },
                 {
-                    website: 'Twitter',
+                    website: 'Facebook',
                     politics: 'conservative leaning',
-                    percent: 35
-                },
-                {
-                    website: 'Reddit',
-                    politics: 'liberal leaning',
-                    percent: 65
-                },
-                {
-                    website: 'Reddit',
-                    politics: 'conservative leaning',
-                    percent: 35
+                    percent: 49
                 },
                 {
                     website: 'Youtube',
@@ -104,16 +93,6 @@ function renderOne() {
                     percent: 48
                 },
                 {
-                    website: 'Facebook',
-                    politics: 'liberal leaning',
-                    percent: 51
-                },
-                {
-                    website: 'Facebook',
-                    politics: 'conservative leaning',
-                    percent: 49
-                },
-                {
                     website: 'TikTok',
                     politics: 'liberal leaning',
                     percent: 59
@@ -124,16 +103,6 @@ function renderOne() {
                     percent: 41
                 },
                 {
-                    website: 'Fox News',
-                    politics: 'liberal leaning',
-                    percent: 7
-                },
-                {
-                    website: 'Fox News',
-                    politics: 'conservative leaning',
-                    percent: 93
-                },
-                {
                     website: 'CNN',
                     politics: 'liberal leaning',
                     percent: 62
@@ -142,7 +111,47 @@ function renderOne() {
                     website: 'CNN',
                     politics: 'conservative leaning',
                     percent: 38
-                }
+                },
+                {
+                    website: 'Instagram',
+                    politics: 'liberal leaning',
+                    percent: 62
+                },
+                {
+                    website: 'Instagram',
+                    politics: 'conservative leaning',
+                    percent: 38
+                },
+                {
+                    website: 'Twitter',
+                    politics: 'liberal leaning',
+                    percent: 65
+                },
+                {
+                    website: 'Twitter',
+                    politics: 'conservative leaning',
+                    percent: 35
+                },
+                {
+                    website: 'Reddit',
+                    politics: 'liberal leaning',
+                    percent: 65
+                },
+                {
+                    website: 'Reddit',
+                    politics: 'conservative leaning',
+                    percent: 35
+                },
+                {
+                    website: 'NYTimes',
+                    politics: 'liberal leaning',
+                    percent: 84
+                },
+                {
+                    website: 'NYTimes',
+                    politics: 'conservative leaning',
+                    percent: 16
+                },
         ]
     });
     chart.renderTo('#bar');

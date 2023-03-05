@@ -14,16 +14,6 @@
 }
 
 
-header #logo-main{
-    display: block;
-    margin: 20px auto;
-}
-
-#navbar-primary.navbar-default {
-    background: transparent;
-    border: none;
-}
-
 #navbar-primary.navbar-default .navbar-nav { 
     width: 100%;
     text-align: center;
@@ -35,13 +25,26 @@ header #logo-main{
     float: none;
 }
 
+.navbar-nav a:hover:not(.active) {
+    background-color:#111111;
+    color: white;
+}
+
+a .active {
+    background-color:aquamarine;
+}
+
+.home-img:hover {
+    content: url("img/RedBlueMap.png");
+
+}
+
 .navbar-nav a {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 40px;
 }
 
 header .logo {
-    margin-left: 50%;
+    margin: auto;
     width: 10%;
 }
 
@@ -60,13 +63,11 @@ a {
 }
 
 
-.identity-img {
-    margin-left: 24%;
-}
 
 .elections {
-    margin-left: 50%;
-    margin-top: -10%;
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
 
 .home-img {
@@ -79,8 +80,20 @@ html,body,#bar{
     height:100%;  
     margin:0;
     padding: 0;
-   }
-   
-   #bar > svg{  
-    display:block;
-   }
+}
+
+#bar > svg{  
+display:block;
+}
+
+.identity-desc {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.identity-img img {
+    margin-left: 20%;
+    width: 60%;
+}
