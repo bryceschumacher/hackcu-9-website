@@ -357,6 +357,7 @@ margin-left: 28%;
     box-shadow: 20px hsl(0, 0%, 3%);
     z-index: -1;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .show {
     padding: 10%;
@@ -421,4 +422,9 @@ margin-left: 28%;
     80% {
       margin-left: calc(-600px * 3);
     }
+  }
+
+  .bias-p2 {
+    text-align: center;
+    margin-top: 2%;
   }
