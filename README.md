@@ -1,6 +1,8 @@
 # hackcu-9
 
-Our HackCU 9 website code. We used the following resources.
+Our HackCU 9 website code!
+
+We used the following resources.
 
 For data:
 https://www.statista.com/statistics/742714/cnn-viewers-politics/
