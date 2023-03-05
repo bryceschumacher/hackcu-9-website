@@ -22,7 +22,17 @@
             
             <!-- Brand and toggle get grouped for better mobile display -->
             <ul class="nav navbar-nav">
-                <li><a href="identity.html">Discover Your Views</a></li>
+                <li class="dropdown">
+                    <a id="underline" href="identity.html">Your Political Views</a>
+                    <button class="dropbtn">
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./identity.html#pih">Politics is Hard</a>
+                      <a href="./identity.html#quiz">Political Quizzes</a>
+                      <a href="./identity.html#findelection">Find a Local Election</a>
+                    </div>
+                </li>
                 <li><a href="understanding-bias.html">Understanding Bias</a></li>
                 <li><a href="extension.html">Our Extension</a></li>
             </ul>
@@ -34,9 +44,58 @@
             <img src="img/leaning_chart.png">
         </div>
         <div class="identity-desc">
-            <p>Politics are <strong>hard</strong></p>
-            <p>There's a reason that we disagree on these topics: because they're challenging. The reason why 100% of americans don't agree on any political idea is because there are tradeoffs with every solution. To be a productive citizen, you must challenge your bias and look at both sides of the story. It is <strong>OKAY</strong> to be zizagged with your political ideology.</p>
+            <div class="h-title">
+                <a id="pih"></a>
+                <h1>Politics is <em>hard</em></h1>
+            </div>
+            <div class="p-identity">
+                <p>There's a reason that we disagree on these topics. They're challenging. The reason why 100% of americans don't agree on any political idea is because there are tradeoffs with every solution. To be a productive citizen, you must challenge your bias and look at both sides of the story. If you are 100% certain that something is correct which 50% of americans think is incorrect, you're probably missing some nuance! It is <strong>OKAY</strong> to be zizagged (↑) with your political ideology.</p>
+            </div>
+            
         </div>
+        <div class="h2-title">
+            <h1>Take a Quiz</h1>
+        </div>
+        <a id="quiz">
+            <div class="quizzes">
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                        <div class="link-quiz">
+                            <a href="https://www.politicalcompass.org/test">
+                                <div class="img-div">
+                                    <img src="img/political_compass.png">
+                                </div>
+                            <p>Click here.</p></a>
+                        </div>
+                        <img id="second-img" src="img/four.png">
+                        <p>63 question quiz that gives you a detailed response on your political spectrum including libertarian and authoritarian as well as conservative and liberal.</p>
+                    </div>
+                    <div class="column" style="background-color:#bbb;">
+                        <div class="link-quiz">
+                            <a href="https://www.pewresearch.org/politics/quiz/political-typology/">
+                                <div class="img-div">
+                                    <img src="img/pew_research.png">
+                                </div>
+                            <p>Click here.</p></a>
+                        </div>
+                        <img id="third-img" src="img/pew-quiz.png">
+                        <p>16 question quiz that gives you one of 9 "typologies" that best matches you. Tells you distinguished features about your group and tells you common beliefs in that group.</p>
+                    </div>
+                    <div class="column" style="background-color:#ccc;">
+                        <div class="link-quiz">
+                            <a href="https://www.isidewith.com/political-quiz">
+                                <div class="img-div">
+                                    <img src="img/i_side_with.png">
+                                </div>
+                            <p>Click here.</p></a>
+                        </div>
+                        <img id="third-img" src="img/isidewith.png">
+                        <p>44 question quiz that asks qualifying details and uncommon questions to find the percent likelihood you agree with the policies of certain parties. Compares your answers to prior voting results.</p>
+                    </div>
+                  </div>
+            </div>
+        </a>
+        <a id="findelection"></a>
         <div class="elections">
             <div class="elections-title"><h3>Enter a state to see upcoming elections:</h3></div>
             <input id="input-elections" type="text">

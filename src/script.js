@@ -72,13 +72,24 @@ function renderOne() {
                     website: 'Fox News',
                     politics: 'conservative leaning',
                     percent: 93
-                },                {
+                },
+                {
                     website: 'Facebook',
                     politics: 'liberal leaning',
                     percent: 51
                 },
                 {
                     website: 'Facebook',
+                    politics: 'conservative leaning',
+                    percent: 49
+                },
+                {
+                    website: 'Pinterest',
+                    politics: 'liberal leaning',
+                    percent: 51
+                },
+                {
+                    website: 'Pinterest',
                     politics: 'conservative leaning',
                     percent: 49
                 },
@@ -91,6 +102,26 @@ function renderOne() {
                     website: 'Youtube',
                     politics: 'conservative leaning',
                     percent: 48
+                },
+                {
+                    website: 'Snapchat',
+                    politics: 'liberal leaning',
+                    percent: 56
+                },
+                {
+                    website: 'Snapchat',
+                    politics: 'conservative leaning',
+                    percent: 44
+                },
+                {
+                    website: 'LinkedIn',
+                    politics: 'liberal leaning',
+                    percent: 58
+                },
+                {
+                    website: 'LinkedIn',
+                    politics: 'conservative leaning',
+                    percent: 42
                 },
                 {
                     website: 'TikTok',
@@ -121,6 +152,16 @@ function renderOne() {
                     website: 'Instagram',
                     politics: 'conservative leaning',
                     percent: 38
+                },
+                {
+                    website: 'WhatsApp',
+                    politics: 'liberal leaning',
+                    percent: 65
+                },
+                {
+                    website: 'WhatsApp',
+                    politics: 'conservative leaning',
+                    percent: 35
                 },
                 {
                     website: 'Twitter',
